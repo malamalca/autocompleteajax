@@ -1,7 +1,10 @@
 # autocompleteajax
 materializecss autocomplete with ajax data load
 
-Here you can send ajax & get data with ajax, set delay and min input value length if you need, can set custom data for send request & cal callback function if need
+Here you can send ajax & get data with ajax, set delay and min input value length if you need, can set custom data for send request & cal callback function if need.
+
+Check demo here:
+https://jsfiddle.net/sxmw2tya/3/
 
 usage example code:
 
@@ -10,7 +13,7 @@ $(document).ready(function() {
     $("#street").autocompleteajax({
         "source": "url",
         "onSelect": function(item) {
-            
+            console.log(item);
         }
     });
 })
@@ -24,7 +27,7 @@ $(document).ready(function() {
 </div>
 ```
 
-Ajax response format from server must be like this
+Ajax request is executed with ?term=XXX parameter. Server should return json response in form below:
 
 ```js
 [
