@@ -4,7 +4,7 @@ materializecss autocomplete with ajax data load
 Here you can send ajax & get data with ajax, set delay and min input value length if you need, can set custom data for send request & cal callback function if need.
 
 Check demo here:
-https://jsfiddle.net/sxmw2tya/3/
+https://jsfiddle.net/z6xdncq1/
 
 usage example code:
 
